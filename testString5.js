@@ -12,3 +12,5 @@ Object.printString(Object.convertStringArrayToSentence(stringarray2));
 Object.printString(Object.convertStringArrayToSentence(stringarray3));
 Object.printString(Object.convertStringArrayToSentence(stringarray4));
 Object.printString(Object.convertStringArrayToSentence(stringarray5));
+Object.printString(Object.convertStringArrayToSentence(""));
+Object.printString(Object.convertStringArrayToSentence("sat"));

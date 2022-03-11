@@ -1,5 +1,5 @@
 function convertStringArrayToSentence(stringArray) {
-    if (stringArray.length === 0) {
+    if (stringArray.length === 0 || !(Array.isArray(stringArray))) {
         return "";
     }
     else {

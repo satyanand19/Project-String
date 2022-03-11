@@ -9,11 +9,11 @@ function getMonth(stringvalue) {
             return monthName(splitDate[0]);
         }
         else {
-            return null;
+            return "";
         }
     }
     else {
-        return null;
+        return "";
     }
 }
 function monthName(monthNumber) {
@@ -47,7 +47,7 @@ function monthName(monthNumber) {
     }
 }
 let printMonth = (monthname) => {
-    if (monthname === null) {
+    if (monthname === "") {
         console.log("Wrong input");
     }
     else {

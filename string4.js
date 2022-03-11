@@ -5,7 +5,7 @@ function fullName(objectDetailswithname) {
             return objectDetailswithname.first_name + " " + objectDetailswithname.last_name;
         }
         else {
-            return null;
+            return "";
         }
     }
     else if (Object.keys(objectDetailswithname).length === 3 && objectDetailswithname.hasOwnProperty('first_name') && objectDetailswithname.hasOwnProperty('middle_name')
@@ -16,16 +16,16 @@ function fullName(objectDetailswithname) {
             return objectDetailswithname.first_name + " " + objectDetailswithname.middle_name + " " + objectDetailswithname.last_name;
         }
         else {
-            return null;
+            return "";
         }
     }
     else {
-        return null;
+        return "";
     }
 }
 
 let printName = stringValue => {
-    if (stringValue === null) {
+    if (stringValue === "") {
         console.log("Invalid input");
     }
     else {
