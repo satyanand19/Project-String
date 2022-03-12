@@ -2,18 +2,16 @@ function splitIPv4address(stringvalue) {
     let emptyarray = [];
     let splitComponentparts = stringvalue.split(".");
 
-    
+
 
     if (splitComponentparts.length === 4) {
 
         let checkeachcomponent = null;
 
+
         for (let counter = 0; counter < splitComponentparts.length; counter++) {
+
             splitComponentparts[counter] = parseInt(splitComponentparts[counter]);
-        }
-
-        for (let counter = 0; counter < splitComponentparts.length; counter++) {
-
             if (splitComponentparts[counter] >= 0 && splitComponentparts[counter] <= 255) {
 
                 checkeachcomponent = true;

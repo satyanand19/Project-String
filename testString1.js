@@ -7,3 +7,5 @@ Object.printNumber(Object.convertStringToNumber("$   122.89"));
 Object.printNumber(Object.convertStringToNumber("$76w.1"));
 Object.printNumber(Object.convertStringToNumber("satya"));
 Object.printNumber(Object.convertStringToNumber("-$123,232.23"));
+
+Object.printNumber(Object.convertStringToNumber("+$9,992.873"));

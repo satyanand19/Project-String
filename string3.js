@@ -18,44 +18,35 @@ function getMonth(stringvalue) {
 }
 function monthName(monthNumber) {
     switch (monthNumber) {
-        case 1: return "January";
+        case 1: console.log("January");
             break;
-        case 2: return "February";
+        case 2: console.log("February");
             break;
-        case 3: return "March";
+        case 3: console.log("March");
             break;
-        case 4: return "April";
+        case 4: console.log("April");
             break;
-        case 5: return "May";
+        case 5: console.log("May");
             break;
-        case 6: return "June";
+        case 6: console.log("June");
             break;
-        case 7: return "July";
+        case 7: console.log("July");
             break;
-        case 8: return "August";
+        case 8: console.log("August");
             break;
-        case 9: return "September";
+        case 9: console.log("September");
             break;
-        case 10: return "October";
+        case 10: console.log("October");
             break;
-        case 11: return "November";
+        case 11: console.log("November");
             break;
-        case 12: return "December";
+        case 12: console.log("December");
             break;
-        default: return "";
+        default: console.log("Wrong input");
             break;
-    }
-}
-let printMonth = (monthname) => {
-    if (monthname === "") {
-        console.log("Wrong input");
-    }
-    else {
-        console.log(monthname);
     }
 }
 
 module.exports = {
-    getMonth,
-    printMonth
+    getMonth
 };

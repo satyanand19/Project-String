@@ -4,6 +4,10 @@ function convertStringToNumber(stringValue) {
 
         return parseFloat(stringValue.charAt(0) + (stringValue.slice(2, stringValue.length).replace(",", "")));
     }
+    else if (stringValue !== undefined && stringValue.charAt(0) === '+' && stringValue.charAt(1) === '$' && isNaN(stringValue.slice(2, stringValue.length).replace(",", "")) === false) {
+
+        return parseFloat(stringValue.charAt(0) + (stringValue.slice(2, stringValue.length).replace(",", "")));
+    }
     else if (stringValue !== undefined && stringValue.charAt(0) === '$' && isNaN(stringValue.slice(1, stringValue.length).replace(",", "")) === false) {
 
         return parseFloat((stringValue.slice(1, stringValue.length).replace(",", "")));
